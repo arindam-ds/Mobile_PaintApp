@@ -1,0 +1,8 @@
+
+/* this CSS file extends the application CSS file found under common\css */
+
+#content {
+	height: 100%;
+	margin: 0 auto;
+	width: 100%;
+}

@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|AnyCPU">
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x86">
+      <Configuration>Debug</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|AnyCPU">
+      <Configuration>Release</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x86">
+      <Configuration>Release</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>cae68434-62ff-4671-ad53-d1ca8cd95c40</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).Default.props" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).props" />
+  <PropertyGroup>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <TargetPlatformVersion>8.0</TargetPlatformVersion>
+    <DefaultLanguage>en-US</DefaultLanguage>
+<!--    <PackageCertificateKeyFile>App1_TemporaryKey.pfx</PackageCertificateKeyFile>  -->
+  </PropertyGroup>
+  <ItemGroup>
+    <AppxManifest Include="package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <Content Include="images\logo.png" />
+    <Content Include="images\smalllogo.png" />
+    <Content Include="images\splashscreen.png" />
+    <Content Include="images\storelogo.png" />
+   	<!-- __start_worklight_web_resources__ -->
+<Content Include="www\default\common\js\base.js" />
+<Content Include="www\default\common\js\busy.js" />
+<Content Include="www\default\common\js\sjcl.min.js" />
+<Content Include="www\default\common\js\stacktrace.min.js" />
+<Content Include="www\default\common\js\wlcommon.js" />
+<Content Include="www\default\common\js\wljq.js" />
+<Content Include="www\default\common\js\wl_.min.js" />
+<Content Include="www\default\css\MobilePaintApp.css" />
+<Content Include="www\default\images\icon.png" />
+<Content Include="www\default\images\thumbnail.png" />
+<Content Include="www\default\images\windows8.png" />
+<Content Include="www\default\js\initOptions.js" />
+<Content Include="www\default\js\main.js" />
+<Content Include="www\default\js\messages.js" />
+<Content Include="www\default\js\MobilePaintApp.js" />
+<Content Include="www\default\MobilePaintApp.html" />
+<Content Include="www\default\wlclient\css\wlclient.css" />
+<Content Include="www\default\wlclient\images\empty.gif" />
+<Content Include="www\default\wlclient\js\analytics\analytics.js" />
+<Content Include="www\default\wlclient\js\analytics\Tealeaf.min.js" />
+<Content Include="www\default\wlclient\js\challengeHandlers\antiXSRFChallengeHandler.js" />
+<Content Include="www\default\wlclient\js\challengeHandlers\authenticityChallengeHandler.js" />
+<Content Include="www\default\wlclient\js\challengeHandlers\deviceAuthAutoProvisioningChallengeHandler.js" />
+<Content Include="www\default\wlclient\js\challengeHandlers\deviceAuthNoProvisioningChallengeHandler.js" />
+<Content Include="www\default\wlclient\js\challengeHandlers\remoteDisableChallengeHandler.js" />
+<Content Include="www\default\wlclient\js\cordova.js" />
+<Content Include="www\default\wlclient\js\deviceAuthentication.js" />
+<Content Include="www\default\wlclient\js\deviceSensors\acquisition.js" />
+<Content Include="www\default\wlclient\js\deviceSensors\bind.js" />
+<Content Include="www\default\wlclient\js\deviceSensors\ExtendedGeolocation.js" />
+<Content Include="www\default\wlclient\js\deviceSensors\geo.js" />
+<Content Include="www\default\wlclient\js\deviceSensors\geoUtilities.js" />
+<Content Include="www\default\wlclient\js\deviceSensors\triggers.js" />
+<Content Include="www\default\wlclient\js\deviceSensors\wifi.js" />
+<Content Include="www\default\wlclient\js\diagnosticDialog.js" />
+<Content Include="www\default\wlclient\js\encryptedcache.js" />
+<Content Include="www\default\wlclient\js\events\eventTransmitter.js" />
+<Content Include="www\default\wlclient\js\features_stubs\jsonstore_stub.js" />
+<Content Include="www\default\wlclient\js\messages.js" />
+<Content Include="www\default\wlclient\js\window.js" />
+<Content Include="www\default\wlclient\js\wlclient.js" />
+<Content Include="www\default\wlclient\js\wlfragments.js" />
+<Content Include="www\default\wlclient\js\wlgap.windows8.js" />
+<Content Include="www\default\wlclient\js\worklight.js" />
+<Content Include="www\skinLoader.html" />
+<!-- __end_worklight_web_resources__ -->    
+  </ItemGroup>
+  <ItemGroup>
+    <SDKReference Include="Microsoft.WinJS.1.0, Version=1.0" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
